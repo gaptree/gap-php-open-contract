@@ -1,0 +1,54 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "bbb41ce2a595f76818e5cb513ab86b23",
+    "packages": [
+        {
+            "name": "gap/open-dto",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://project.tecposter.cn/diffusion/66/gap-php-open-dto.git",
+                "reference": "a7f3554fae0a25238a3ec0a1c1166ed80693f44f"
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Gap\\Open\\Dto\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "zhanjh",
+                    "email": "zhanjh@126.com"
+                }
+            ],
+            "description": "Gap Open Dto",
+            "homepage": "https://project.tecposter.cn/diffusion/66/",
+            "keywords": [
+                "gap"
+            ],
+            "time": "2017-12-13T15:25:14+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.1.0"
+    },
+    "platform-dev": []
+}

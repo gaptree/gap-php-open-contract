@@ -1,0 +1,43 @@
+{
+    "name": "gap/open-contract",
+    "type": "library",
+    "description": "Gap Open Contract",
+    "license": "MIT",
+    "keywords": [
+        "gap",
+        "oauth2"
+    ],
+    "homepage": "https://project.tecposter.cn/diffusion/67/",
+    "authors": [
+        {
+            "name": "zhanjh",
+            "email": "zhanjh@126.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "gap/open-dto": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gap\\Open\\Contract\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "phpunit\\Gap\\Open\\Contract\\": "phpunit"
+        }
+    },
+    "scripts": {
+        "test": [
+            "@phpcs",
+            "@phpmd",
+            "@phpstan",
+            "@phpunit"
+        ],
+        "phpunit": "phpunit",
+        "phpstan": "phpstan analyse -l 7 -c phpstan.neon phpunit src",
+        "phpcs": "phpcs --report=full --standard=psr2 --extensions=php src phpunit",
+        "phpmd": "phpmd src,phpunit text cleancode,codesize,controversial,design,naming,unusedcode"
+    }
+}
